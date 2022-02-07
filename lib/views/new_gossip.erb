@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body style="background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); background-size: cover; background-repeat: no-repeat; height:100%">
+  <div style="background-color:#F9F7F4; box-shadow: 5px 5px 17px 1px rgba(159,159,159,0.38);  padding: 25px; border-radius:20px; width : 450px; margin: 50px auto">
+  <div style="text-align:center">
+    <h1>Crée un potin !</h1>
+    <p>Balance ton potin via le formulaire ci-dessous</p>
+    <form action='/gossips/new' method='POST'>
+      Saisi ici ton nom :  <input type='text' name='gossip_author'/><br/><br/>
+      Balance ton potin : <input type='text' name='gossip_content'/><br/><br/><br/>
+      <input type='submit' value="Envoyer"style="text-decoration: none; color : rgb(131,58,180); padding : 10px; border-radius: 15px; border: 2px solid rgb(131,58,180);">
+    </form>
+
+  </div>
+  </div>
+  </body>
+</html>

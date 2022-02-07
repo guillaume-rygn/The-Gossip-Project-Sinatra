@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body style="background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); background-size: cover; background-repeat: no-repeat; height:100%">
+  <div style="background-color:#F9F7F4; box-shadow: 5px 5px 17px 1px rgba(159,159,159,0.38);  padding: 25px; border-radius:20px; width : 450px; margin: 50px auto">
+  <div style="text-align:center">
+    <h1>Page Potin</h1>
+    <h2>Voici la page du potin n°<%=@id+1%></h2>
+    <p>Son auteur : <span style="color: red"><%= @gossip.author%></span></p>
+    <p>Le contenu du potin : <em><%= @gossip.content%></em></p>
+    <br/>
+    <a href="/gossips/<%= @id%>/edit" style="text-decoration: none; color: #FFF; margin:25px; padding : 10px; border-radius: 15px; background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);">editer le potin</a>
+    <a href="/" style="text-decoration: none; color : rgb(131,58,180); margin:25px; padding : 10px; border-radius: 15px; border: 2px solid rgb(131,58,180);">retour au menu</a>
+    <br/><br/>
+
+  </div>
+  </div>
+
+
+  </body>
+</html>
